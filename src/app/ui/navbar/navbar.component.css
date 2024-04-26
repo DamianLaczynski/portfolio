@@ -72,70 +72,72 @@ box-shadow: 0px 4px 12px 0px rgba(66, 68, 90, 1);
     font-weight: 600;
 }
 
-@media screen and (max-width: 850px) {
+.tabbar {
+    width: 80%;
+    height: 60px;
+
+    border-radius: 12px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 6px;
+    padding: 16px;
+    background-color: rgb(24, 24, 29, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.tb-btn {
+    height: 40px;
+    width: auto;
+    font-size: 24px;
+    color: #c5c5c569;
+    background: none;
+    border: none;
+    border-radius: 12px;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.tb-btn:hover {
+    color: #FFFFFF;
+    background-color: rgb(256, 256, 256, 0.1);
+}
+
+.highlight {
+    color: #FFFFFF;
+    background-color: rgb(256, 256, 256, 0.1);
+}
+
+
+@media screen and (max-width: 1100px) {
     .navbar {
+        display: none;
+    }
+    
+    .tabbar {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: space-between;
-        padding: 16px;
-        border-radius: 12px;
-        background-color: #18181D4B;
-    
-        z-index: 1;
-        margin-left: 10%;
-        margin-right: 10%;
+        height: auto;
+        width: 75%;
     }
-    .left-section {
-        display: flex;
-        flex-direction: row;
-        column-gap: 40px;
-        padding: 0px;
+
+    .container {
+        position: sticky;
+        top: 88vh;
     }
-    
-    .nav-btn {
-        width: max-content;
-        height: 26px;
-        text-align: center;
-        border: none;
-        background: none;
-        color: #C5C5C5;
-        border-radius: 12px;
-    
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        padding: auto;
-    }
-    
-    .nav-btn:hover {
-        color: #FFFFFF;
-        cursor: pointer;
-    }
-    
-    .social-section {
-        display: flex;
-        column-gap: 24px;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-    }
-    .icon {
-        height: 24px;
-        width: 24px;
-        font-size: 24px;
-        text-align: center;
-        padding: 0px;
-    }
-    
-    .separator {
-        height: 24px;
-        border: 1px solid rgba(255, 255, 255, 0.25);
-    }
-    
-    .active {
-        color: #FFFFFF;
-        font-weight: 600;
+  }
+
+  .container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 500px) { 
+
+    .container {
+        padding-bottom: 10px;
     }
   }

@@ -50,9 +50,11 @@ h1 {
 }
 
 p {
+max-width: 729px;
 font-size: 24px;
 font-weight: 400;
 color: #808080;
+text-wrap: wrap;
 }
 
 .welcome {
@@ -90,8 +92,56 @@ img {
     opacity: 100%;
 }
 
+.hello {
+    display: none;
+}
+
 @media screen and (max-width: 1100px) {
+    .page {
+        flex-direction: column;
+        justify-content: center;
+    }
     img {
         display: none;
     }
+
+    .buttons-section {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    p {
+        padding: 10px 15% 10px 15%;
+        font-size: 15px;
+        text-wrap: wrap;
+        text-align: start;
+        height: min-content;
+    }
+    .welcome {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-wrap: wrap;
+    }
+
+    .welcome h1 {
+        font-size: 48px;
+    }
+
+    .hello {
+        display: flex;
+    }
   }
+  @media screen and (max-width: 1100px) { 
+  .buttons-section {
+
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  .secondary {
+    justify-content: center;
+    text-align: center;
+  }
+
+}

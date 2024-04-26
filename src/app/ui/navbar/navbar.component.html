@@ -1,3 +1,4 @@
+<div class="container">
 <div class="navbar">
 <div class="left-section">
     <div class="nav-btn icon logo" (click)="increment()">
@@ -38,16 +39,38 @@
         }
         </div>
     <button class="nav-btn" routerLink="home" [routerLinkActive]="['active']">Home</button>
-    <!--<button class="nav-btn" routerLink="about" [routerLinkActive]="['active']">About</button>
+    <button class="nav-btn" routerLink="about" [routerLinkActive]="['active']">About</button>
     <button class="nav-btn" routerLink="tech-stack" [routerLinkActive]="['active']">Tech Stack</button>
     <button class="nav-btn" routerLink="projects" [routerLinkActive]="['active']">Projects</button>
-    <button class="nav-btn" routerLink="contact" [routerLinkActive]="['active']">Contact</button>-->
+    <button class="nav-btn" routerLink="contact" [routerLinkActive]="['active']">Contact</button>
 </div>
 <div class="social-section">
     <a class="nav-btn icon" href="https://www.linkedin.com/in/damianlaczynski" target="_blank"><i class="bi bi-linkedin"></i></a>
-    <!--<a class="nav-btn icon" href="" target="_blank"><i class="bi bi-twitter-x"></i></a>-->
+    <a class="nav-btn icon" href="" target="_blank"><i class="bi bi-twitter-x"></i></a>
     <a class="nav-btn icon" href="https://github.com/DamianLaczynski" target="_blank"><i class="bi bi-github"></i></a>
-    <!--<div class="separator"></div>
-    <button class="nav-btn icon"><i class="bi bi-sun"></i></button>-->
+    <div class="separator"></div>
+    <button class="nav-btn icon"><i class="bi bi-sun"></i></button>
+</div>
+</div>
+
+<div class="tabbar">
+    <button class="tb-btn" [routerLink]="['/home']" [routerLinkActive]="['highlight']">
+        <i class="bi bi-house" [routerLinkActive]="['bi-house-fill']"></i>
+    </button>
+    <button class="tb-btn" [routerLink]="['/about']" [routerLinkActive]="['highlight']">
+        <i class="bi bi-person" [routerLinkActive]="['bi-person-fill']"></i>
+    </button>
+    <button class="tb-btn" [routerLink]="['/projects']" [routerLinkActive]="['highlight']">
+        <i class="bi-briefcase bi" [routerLinkActive]="['bi-briefcase-fill']"></i>
+    </button>
+    <button class="tb-btn" [routerLink]="['/tech-stack']" [routerLinkActive]="['highlight']">
+        <i class="bi-backpack bi" [routerLinkActive]="['bi-bi-backpack-fill']"></i>
+    </button>
+    <button class="tb-btn" [routerLink]="['/contact']" [routerLinkActive]="['highlight']">
+        <i class="bi bi-envelope" [routerLinkActive]="['bi-envelope-fill']"></i>
+    </button>
+    <!--<button class="tb-btn">
+        <i class="bi bi-list"></i>
+    </button>-->
 </div>
 </div>
