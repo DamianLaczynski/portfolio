@@ -1,0 +1,20 @@
+<div class="card">
+    <div class="content">
+        @if (logoUrl) {
+            <div class="logo">
+                <img [src]="logoUrl"/>
+            </div>
+        } 
+        <div class="title">{{title}}</div>
+    
+        <div class="description">{{description}}</div>
+        @if (buttonUrl) {
+            <button class="btn">{{buttonText}}<i class="bi bi-arrow-right"></i></button>
+        }
+    </div>
+    @if (photoUrl) {
+        <div class="image">
+            <img [src]="photoUrl"/>
+        </div>
+    }  
+</div>

@@ -1,0 +1,53 @@
+<div class="navbar">
+<div class="left-section">
+    <div class="nav-btn icon logo" (click)="increment()">
+        @switch (number) {
+            @case (0) {
+                <i class="bi bi-0-square-fill"></i>
+            }
+            @case (1) {
+                <i class="bi bi-1-square-fill"></i>
+            }
+            @case (2) {
+                <i class="bi bi-2-square-fill"></i>
+            }
+            @case (3) {
+                <i class="bi bi-3-square-fill"></i>
+            }
+            @case (4) {
+                <i class="bi bi-4-square-fill"></i>
+            }
+            @case (5) {
+                <i class="bi bi-5-square-fill"></i>
+            }
+            @case (6) {
+                <i class="bi bi-6-square-fill"></i>
+            }
+            @case (7) {
+                <i class="bi bi-7-square-fill"></i>
+            }
+            @case (8) {
+                <i class="bi bi-8-square-fill"></i>
+            }
+            @case (9) {
+                <i class="bi bi-9-square-fill"></i>
+            }
+            @default {
+                <i class="bi bi-telephone-forward-fill" routerLink="contact"></i>
+            }
+        }
+        </div>
+    <button class="nav-btn" routerLink="home" [routerLinkActive]="['active']">Home</button>
+    <!--<button class="nav-btn" routerLink="about" [routerLinkActive]="['active']">About</button>
+    <button class="nav-btn" routerLink="tech-stack" [routerLinkActive]="['active']">Tech Stack</button>
+    <button class="nav-btn" routerLink="projects" [routerLinkActive]="['active']">Projects</button>
+    <button class="nav-btn" routerLink="contact" [routerLinkActive]="['active']">Contact</button>-->
+</div>
+<div class="social-section">
+    <a class="nav-btn icon" href="https://www.linkedin.com/in/damianlaczynski" target="_blank"><i class="bi bi-linkedin"></i></a>
+    <!--<a class="nav-btn icon" href="" target="_blank"><i class="bi bi-twitter-x"></i></a>-->
+    <a class="nav-btn icon" href="https://github.com/DamianLaczynski" target="_blank"><i class="bi bi-github"></i></a>
+    <!--<div class="separator"></div>
+    <button class="nav-btn icon"><i class="bi bi-sun"></i></button>-->
+</div>
+</div>

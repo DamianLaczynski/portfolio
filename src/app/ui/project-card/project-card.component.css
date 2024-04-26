@@ -1,0 +1,88 @@
+.card {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    height: 565px;
+    width: 1024px;
+
+    border: 1px solid #383737;
+    border-radius: 32px;
+
+    background-color: #181818;
+}
+.content {
+    margin-left: 40px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 445px;
+    row-gap: 16px;
+}
+.logo {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #383737;
+    border-radius: 24px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #383737;
+    border-radius: 24px;
+}
+.title {
+    font-size: 32px;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+    
+.description {
+    flex: 1 1 auto;
+    font-size: 16px;
+    color: #808080;
+}
+.image {
+    display: flex;
+}
+.image img{
+    height: 565px;
+    width: 457px;
+
+    border-radius: 0px 32px 32px 0px;
+}
+
+.btn {
+    padding: 5px;
+    text-wrap: nowrap;
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    background: none;
+    color: #FFFFFF;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn i {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.btn:hover {
+    background-color: #38373752;
+}

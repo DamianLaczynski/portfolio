@@ -1,0 +1,23 @@
+<div class="page">
+    <div class="welcome">
+        <h1 class="">
+            <span style="color: #808080">I’m</span> Damian <br />
+            Łączyński
+        </h1>
+        <p class="" style="max-width: 729px">
+            I am a student that is ready to start his first job in IT industry get experience and develop skills . 
+My strengths are never give up, having good communications skills and being able to quickly adapt to any circumstance.
+        </p>
+        <div class="buttons-section">
+            <a style="text-decoration: none;" href="../../assets/Damian_Laczynski_2024.pdf" download="resume-damian-laczynski.pdf"><button
+                    class="p-btn primary">See my resume</button>
+            </a>
+            <button class="p-btn secondary" [routerLink]="['/contact']">
+                Get in touch
+            </button>
+        </div>
+    </div>
+    <div (click)="angryIncrement()" class="img-container">
+    <img [src]="avatarUrl" />
+    </div>
+</div>

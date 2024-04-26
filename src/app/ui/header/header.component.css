@@ -1,0 +1,26 @@
+.header {
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    justify-content: start;
+    align-content: end;
+    text-align: start;
+    margin: 0px;
+}
+.title {
+    padding: 0px;
+    font-size: 80px;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 80px;
+
+}
+.subtitle {
+    padding: 0px;
+    font-size: 24px;
+    font-weight: normal;
+    color: #808080;
+    letter-spacing: -1,9px;
+    line-height: 24px;
+}
