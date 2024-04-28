@@ -1,18 +1,24 @@
-body {
-    width: 100%;
+:root {
+    --foreground-rgb: 255,255,255;
+    --background: #0D0D0D;
+}
 
+body {
     margin: 0px;
     padding: 0px;
     
-    color: #FFFFFF;
-    background-color: #0D0D0D;
+    color: rgb(var(--foreground-rgb));
+    background-color: var(--background);
     
 
     display: flex;
     justify-content: center;
+}
 
+.global-text-style {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .bg-image {
@@ -40,16 +46,6 @@ body {
     background-size: cover;
 }
 
-app-navbar {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-app-footer {
-    width: 100vw;
-    background-color: #0d0d0d70;
-}
-
 @media screen and (max-width: 1100px) { 
 
     app-navbar {
@@ -70,6 +66,8 @@ app-footer {
         width: 100%; 
     }
 }
+
+
 ::-webkit-scrollbar {
     width: 6px;
   }
