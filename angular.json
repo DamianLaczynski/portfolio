@@ -23,9 +23,11 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/portfolio/media/assets",
-              "src/404.html",
-              "src/.nojekyll"
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "/assets/"
+              }
             ],
             "styles": [
               "src/styles.css",

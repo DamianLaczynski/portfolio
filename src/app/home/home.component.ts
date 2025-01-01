@@ -9,17 +9,15 @@ import { RouterLink } from '@angular/router';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  angry:number = 0;
-  avatarUrl:string = "../../portfolio/media/assets/Damian-Laczynski.jpg";
-  angryUrl:string = "../../portfolio/media/assets/4T2MshPVSMujloZsFqYos1LYNZmBrCVhVNlN3Mm4noBcfXNBYzXJM2pruHZhEcSi8XnaZq-inIrNJZMr-cxlF7ZQdyc9yrIRnRKR.avif";
+  angry: number = 0;
+  avatarUrl: string = "assets/Damian-Laczynski.jpg";
+  angryUrl: string = "assets/4T2MshPVSMujloZsFqYos1LYNZmBrCVhVNlN3Mm4noBcfXNBYzXJM2pruHZhEcSi8XnaZq-inIrNJZMr-cxlF7ZQdyc9yrIRnRKR.avif";
 
 
-  angryIncrement()
-  {
+  angryIncrement() {
     this.angry++;
-    if(this.angry > 20)
-      {
-        this.avatarUrl = this.angryUrl;
-      }
+    if (this.angry > 20) {
+      this.avatarUrl = this.angryUrl;
+    }
   }
 }
