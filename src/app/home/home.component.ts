@@ -10,8 +10,8 @@ import { RouterLink } from '@angular/router';
 })
 export class HomeComponent {
   angry:number = 0;
-  avatarUrl:string = "../../assets/Damian-Laczynski.jpg";
-  angryUrl:string = "../../assets/4T2MshPVSMujloZsFqYos1LYNZmBrCVhVNlN3Mm4noBcfXNBYzXJM2pruHZhEcSi8XnaZq-inIrNJZMr-cxlF7ZQdyc9yrIRnRKR.avif";
+  avatarUrl:string = "../../portfolio/media/assets/Damian-Laczynski.jpg";
+  angryUrl:string = "../../portfolio/media/assets/4T2MshPVSMujloZsFqYos1LYNZmBrCVhVNlN3Mm4noBcfXNBYzXJM2pruHZhEcSi8XnaZq-inIrNJZMr-cxlF7ZQdyc9yrIRnRKR.avif";
 
 
   angryIncrement()

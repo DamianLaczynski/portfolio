@@ -1,0 +1,133 @@
+.contact-card {
+    width: 1024px;
+    height: auto;
+
+    margin-top: 20px;
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #181818;
+
+    border: 1px solid #383737;
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 20px;
+}
+
+.avatar img {
+    width: 300px;
+    height: 300px;
+
+    border: 2px solid #383737;
+    border-radius: 100%;
+
+    -webkit-box-shadow: 0px 8px 100px -50px rgba(109, 109, 109, 1);
+-moz-box-shadow: 0px 8px 100px -50px rgba(109, 109, 109, 1);
+box-shadow: 0px 8px 100px -50px rgba(109, 109, 109, 1);
+}
+
+.name {
+    font-size: 80px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.nav-btn {
+    width: max-content;
+    height: 60px;
+    text-align: center;
+    border: none;
+    background: none;
+    color: #C5C5C5;
+    border-radius: 12px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: auto;
+}
+
+.nav-btn:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 60px;
+    text-align: center;
+    padding: 0px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+
+    font-size: 32px;
+    color: #808080;
+}
+
+.highlight {
+    color: #ffffff;
+}
+
+
+@media screen and (max-width: 1100px) { 
+    .contact-card {
+        margin: 15px;
+        width: auto;
+        flex-wrap: wrap;
+    }
+    .name {
+        text-align: center;
+        font-size: 48px;
+    }
+    .icon {
+        font-size: 50px;
+    }
+
+    .content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .column {
+        justify-content: center;
+        align-items: center;
+    }
+    .social {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact {
+        font-size: 16px;
+    }
+
+    .addition {
+        text-align: center;
+    }
+}
