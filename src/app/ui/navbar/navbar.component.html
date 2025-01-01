@@ -1,75 +1,77 @@
 <div class="container">
-<div class="navbar">
-<div class="left-section">
-    <div class="nav-btn icon logo" (click)="increment()">
-        @switch (number) {
-            @case (0) {
+    <div class="navbar">
+        <div class="left-section">
+            <div class="nav-btn icon logo" (click)="increment()">
+                @switch (number) {
+                @case (0) {
                 <i class="bi bi-0-square-fill"></i>
-            }
-            @case (1) {
+                }
+                @case (1) {
                 <i class="bi bi-1-square-fill"></i>
-            }
-            @case (2) {
+                }
+                @case (2) {
                 <i class="bi bi-2-square-fill"></i>
-            }
-            @case (3) {
+                }
+                @case (3) {
                 <i class="bi bi-3-square-fill"></i>
-            }
-            @case (4) {
+                }
+                @case (4) {
                 <i class="bi bi-4-square-fill"></i>
-            }
-            @case (5) {
+                }
+                @case (5) {
                 <i class="bi bi-5-square-fill"></i>
-            }
-            @case (6) {
+                }
+                @case (6) {
                 <i class="bi bi-6-square-fill"></i>
-            }
-            @case (7) {
+                }
+                @case (7) {
                 <i class="bi bi-7-square-fill"></i>
-            }
-            @case (8) {
+                }
+                @case (8) {
                 <i class="bi bi-8-square-fill"></i>
-            }
-            @case (9) {
+                }
+                @case (9) {
                 <i class="bi bi-9-square-fill"></i>
-            }
-            @default {
+                }
+                @default {
                 <i class="bi bi-telephone-outbound-fill" routerLink="contact"></i>
-            }
-        }
+                }
+                }
+            </div>
+            <button class="nav-btn" routerLink="home" [routerLinkActive]="['active']">Home</button>
+            <button class="nav-btn" routerLink="about" [routerLinkActive]="['active']">About</button>
+            <button class="nav-btn" routerLink="tech-stack" [routerLinkActive]="['active']">Tech Stack</button>
+            <button class="nav-btn" routerLink="projects" [routerLinkActive]="['active']">Projects</button>
+            <button class="nav-btn" routerLink="contact" [routerLinkActive]="['active']">Contact</button>
         </div>
-    <button class="nav-btn" routerLink="home" [routerLinkActive]="['active']">Home</button>
-    <button class="nav-btn" routerLink="about" [routerLinkActive]="['active']">About</button>
-    <button class="nav-btn" routerLink="tech-stack" [routerLinkActive]="['active']">Tech Stack</button>
-    <button class="nav-btn" routerLink="projects" [routerLinkActive]="['active']">Projects</button>
-    <button class="nav-btn" routerLink="contact" [routerLinkActive]="['active']">Contact</button>
-</div>
-<div class="social-section">
-    <a class="nav-btn icon" href="https://www.linkedin.com/in/damianlaczynski" target="_blank"><i class="bi bi-linkedin"></i></a>
-    <a class="nav-btn icon" href="https://github.com/DamianLaczynski" target="_blank"><i class="bi bi-github"></i></a>
-    <!--<div class="separator"></div>
-    <button class="nav-btn icon"><i class="bi bi-sun"></i></button>-->
-</div>
-</div>
+        <div class="social-section">
+            <a class="nav-btn icon" href="https://www.linkedin.com/in/damianlaczynski" target="_blank"><i
+                    class="bi bi-linkedin"></i></a>
+            <a class="nav-btn icon" href="https://github.com/DamianLaczynski" target="_blank"><i
+                    class="bi bi-github"></i></a>
+            <div class="separator"></div>
+            <button class="nav-btn icon"><i class="bi bi-sun"></i></button>
+        </div>
+    </div>
 
-<div class="tabbar">
-    <button class="tb-btn" [routerLink]="['/home']" [routerLinkActive]="['highlight']">
-        <i class="bi bi-house" [routerLinkActive]="['bi-house-fill']"></i>
-    </button>
-    <button class="tb-btn" [routerLink]="['/about']" [routerLinkActive]="['highlight']">
-        <i class="bi bi-person" [routerLinkActive]="['bi-person-fill']"></i>
-    </button>
-    <button class="tb-btn" [routerLink]="['/projects']" [routerLinkActive]="['highlight']">
-        <i class="bi-briefcase bi" [routerLinkActive]="['bi-briefcase-fill']"></i>
-    </button>
-    <button class="tb-btn" [routerLink]="['/tech-stack']" [routerLinkActive]="['highlight']">
-        <i class="bi-backpack bi" [routerLinkActive]="['bi-bi-backpack-fill']"></i>
-    </button>
-    <button class="tb-btn" [routerLink]="['/contact']" [routerLinkActive]="['highlight']">
-        <i class="bi bi-envelope" [routerLinkActive]="['bi-envelope-fill']"></i>
-    </button>
-    <!--<button class="tb-btn">
+    <div class="tabbar">
+        <button class="tb-btn" [routerLink]="['/home']" [routerLinkActive]="['highlight']">
+            <i class="bi bi-house" [routerLinkActive]="['bi-house-fill']"></i>
+        </button>
+        <button class="tb-btn" [routerLink]="['/about']" [routerLinkActive]="['highlight']">
+            <i class="bi bi-person" [routerLinkActive]="['bi-person-fill']"></i>
+        </button>
+        <button class="tb-btn" [routerLink]="['/projects']" [routerLinkActive]="['highlight']">
+            <i class="bi-briefcase bi" [routerLinkActive]="['bi-briefcase-fill']"></i>
+        </button>
+        <button class="tb-btn" [routerLink]="['/tech-stack']" [routerLinkActive]="['highlight']">
+            <i class="bi-backpack bi" [routerLinkActive]="['bi-bi-backpack-fill']"></i>
+        </button>
+        <button class="tb-btn" [routerLink]="['/contact']" [routerLinkActive]="['highlight']">
+            <i class="bi bi-envelope" [routerLinkActive]="['bi-envelope-fill']"></i>
+        </button>
+        <!--<button class="tb-btn">
         <i class="bi bi-list"></i>
     </button>-->
-</div>
+    </div>
 </div>
