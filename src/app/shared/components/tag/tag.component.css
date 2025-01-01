@@ -1,0 +1,20 @@
+.tag {
+    width: auto;
+    padding: 10px 12px;
+
+    background-color: #181818;
+    color: #808080;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+
+    border: 1px solid #272525;
+    border-radius: 26px;
+}
+
+@media screen and (max-width: 1100px) {
+    .tag {
+        font-size: 11px;
+    }
+}

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../ui/header/header.component';
-import { SectionComponent } from '../ui/section/section.component';
+import { CardComponent } from '@shared/components/card/card.component';
+import { HeaderComponent } from '@shared/components/header/header.component';
 
 @Component({
   selector: 'app-tech-stack',
   standalone: true,
-  imports: [HeaderComponent, SectionComponent],
+  imports: [HeaderComponent, CardComponent],
   templateUrl: './tech-stack.component.html',
   styleUrl: './tech-stack.component.css'
 })
