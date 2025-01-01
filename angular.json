@@ -16,13 +16,16 @@
             "outputPath": "dist/portfolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "baseHref": "/portfolio/",
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/portfolio/media/assets"
+              "src/portfolio/media/assets",
+              "src/404.html",
+              "src/.nojekyll"
             ],
             "styles": [
               "src/styles.css",
