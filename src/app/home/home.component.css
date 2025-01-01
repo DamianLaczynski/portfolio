@@ -10,21 +10,22 @@
     font-weight: 400;
     border: none;
     cursor: pointer;
-}    
+}
 
 
 .primary {
     color: #FFFFFF;
-    background: rgb(19,19,19);
-    background: linear-gradient(0deg, rgba(19,19,19,1) 0%, rgba(26,26,26,1) 100%);
+    background: rgb(19, 19, 19);
+    background: linear-gradient(0deg, rgba(19, 19, 19, 1) 0%, rgba(26, 26, 26, 1) 100%);
 }
+
 .primary:hover {
-    background: rgb(19,19,19);
-    background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(26,26,26,1) 100%);
-    
-    -webkit-box-shadow: 0px 4px 15px 1px rgba(66, 68, 90, 1);
--moz-box-shadow: 0px 4px 15px 1px rgba(66, 68, 90, 1);
-box-shadow: 0px 4px 15px 1px rgba(66, 68, 90, 1);
+    background: rgb(19, 19, 19);
+    background: linear-gradient(180deg, rgba(19, 19, 19, 1) 0%, rgba(26, 26, 26, 1) 100%);
+
+    -webkit-box-shadow: 0px 1px 8px 1px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 1px 8px 1px rgba(66, 68, 90, 1);
+    box-shadow: 0px 1px 8px 1px rgba(66, 68, 90, 1);
 }
 
 .secondary {
@@ -50,11 +51,11 @@ h1 {
 }
 
 p {
-max-width: 729px;
-font-size: 24px;
-font-weight: 400;
-color: #808080;
-text-wrap: wrap;
+    max-width: 729px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #808080;
+    text-wrap: wrap;
 }
 
 .welcome {
@@ -101,6 +102,7 @@ img {
         flex-direction: column;
         justify-content: center;
     }
+
     img {
         display: none;
     }
@@ -117,6 +119,7 @@ img {
         text-align: start;
         height: min-content;
     }
+
     .welcome {
         display: flex;
         justify-content: center;
@@ -131,17 +134,22 @@ img {
     .hello {
         display: flex;
     }
-  }
-  @media screen and (max-width: 1100px) { 
-  .buttons-section {
+}
 
-    flex-direction: column;
-    row-gap: 12px;
-  }
+@media screen and (max-width: 1100px) {
+    .buttons-section {
 
-  .secondary {
-    justify-content: center;
-    text-align: center;
-  }
+        flex-direction: column;
+        row-gap: 12px;
+    }
 
+    .secondary {
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+span {
+    color: #fafafa;
 }

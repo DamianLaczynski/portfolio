@@ -14,4 +14,12 @@ export class ProjectCardComponent {
   @Input({required:true}) description!: string;
   @Input() buttonUrl?: string;
   @Input({required:true}) buttonText!: string;
+
+  navigate()
+  {
+    if(this.buttonUrl)
+      {
+        window.open(this.buttonUrl, '_blank');
+      }
+  }
 }

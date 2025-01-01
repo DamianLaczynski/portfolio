@@ -1,3 +1,30 @@
+.footer {
+    margin: 40px auto 20px auto;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-section {
+    display: flex;
+    flex-direction: row;
+    column-gap: 120px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
 a {
     text-decoration: none;
 
@@ -14,29 +41,6 @@ a {
 a:hover .external {
     visibility: visible;
     font-weight: bold;
-}
-
-.footer {
-    margin-top: 40px;
-
-    width: auto;
-    padding: 42px 15% 42px 15%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    column-gap: 60px;
-}
-
-.links-section {
-    display: flex;
-    flex-direction: row;
-    column-gap: 120px;
-}
-
-.section {
-    display: flex;
-    flex-direction: column;
-    row-gap: 32px;
 }
 
 .title {

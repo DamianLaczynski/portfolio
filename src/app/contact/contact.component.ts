@@ -9,5 +9,5 @@ import { HeaderComponent } from '../ui/header/header.component';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
-
+  email: string = "damianlaczynski.edu@gmail.com";
 }
