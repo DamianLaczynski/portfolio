@@ -2,10 +2,9 @@ import { Component, Input } from '@angular/core';
 import { TagComponent } from '../tag/tag.component';
 
 @Component({
-  selector: 'app-card',
-  standalone: true,
-  imports: [TagComponent],
-  template: `
+    selector: 'app-card',
+    imports: [TagComponent],
+    template: `
     <div class="tech-card">
         <div class="icon"><img [src]="imageSrc" /></div>
         <div class="header">
@@ -14,7 +13,7 @@ import { TagComponent } from '../tag/tag.component';
         </div>
     </div>
   `,
-  styleUrl: './card.component.css'
+    styleUrl: './card.component.css'
 })
 export class CardComponent {
   @Input() imageSrc!: string;
